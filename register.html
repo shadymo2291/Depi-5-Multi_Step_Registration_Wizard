@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert dollar to Egyptian pound</title>
+    <!-- bootstrap6 css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row h-100">
+            <div class="md:col-6">
+                <img class="d-block w-100" src="img/56f58c5bbae6320e1aa5d36445fd722b.jpg" alt="" srcset="">
+            </div>
+
+            <div class="md:col-6 md:ps-12 d-flex flex-column justify-content-center">
+                <h4 class="fs-xl pt-6 md:pt-0">Welcome</h4>
+                <p>Do ahead and sign up, let everyone<br>know how awesome you are!</p>
+                <form id="submit_form" action="success.html" method="post">
+                    <p id="emptyForm" class="alert theme-danger text-center d-none justify-content-center">Please enter your data.</p>
+                    <div class="userNameContainer mb-5">
+                        <input type="text" name="user_name" id="userName" class="form-control" placeholder="User Name">
+                        <span id="userNameError" class="fg-danger m-0 fs-xs"></span>
+                    </div>
+                    
+                    <div class="mailContainer mb-5">
+                        <input type="email" name="email" id="mail" class="form-control" placeholder="Email">
+                        <span id="mailError" class="fg-danger m-0 fs-xs"></span>
+                    </div>
+                    
+                    <div class="passwordContainer mb-3">
+                        <input type="password" name="password" id="password" class="form-control mb-5" placeholder="Passwors">
+                        <input type="password" name="confirm_password" id="confirmPassword" class="form-control" placeholder="Confirm Passwors">
+                        <span id="passwordError" class="fg-danger m-0 fs-xs"></span>
+                    </div>
+                    
+                    <input type="submit" class="btn-solid theme-primary d-block w-100" value="Create New Account">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js file -->
+     <script src="js/main.js"></script>
+
+</body>
+</html>
