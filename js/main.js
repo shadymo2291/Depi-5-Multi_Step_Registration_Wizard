@@ -30,6 +30,8 @@ document.getElementById('submit_form').onsubmit = function() {
     }else if (username.length < 5 || username.length > 13) {
         userNameError.innerHTML = "Username must be more than 3 chars or less 15 chars .";
         return false; 
+    }else {
+        userNameError.innerHTML = "";
     }
     
     // Check Email Validation:
@@ -39,6 +41,8 @@ document.getElementById('submit_form').onsubmit = function() {
     }else if (!email.includes("@")) {
         emailError.innerHTML = "Please enter a valid email address.";
         return false;
+    }else {
+        emailError.innerHTML = ""
     }
     
     // Check Password Validation:
@@ -48,9 +52,11 @@ document.getElementById('submit_form').onsubmit = function() {
     }else if (password.length < 6) {
         passwordError.innerHTML = "Password must be at least 6 characters long.";
         return false;
-    } else if (password !== passwordConfirmation) {
+    }else if (password !== passwordConfirmation) {
         passwordError.innerHTML = "Password dose not match.";
         return false;
+    } else {
+        passwordError.innerHTML = ""
     }
 
 };
